@@ -1,0 +1,134 @@
+:root {
+
+    --clr-main-btn: hsl(25, 97%, 53%);
+    --clr-txt-header: hsl(0, 0%, 100%);
+    --clr-txt-main: hsl(217, 12%, 63%);
+    --clr-txt-rating: hsl(216, 12%, 54%);
+    --clr-card-bg: hsl(213, 19%, 18%);
+    --clr-main-bg: hsl(216, 12%, 8%);
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--clr-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-txt-main);
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.938rem;
+    
+}
+
+#container {
+    padding: 1rem;
+}
+
+.card-container {
+    background-color: var(--clr-card-bg);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    
+
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating{
+    background-color: hsl(214, 11%, 27%);
+    padding: .5rem 1rem;
+    border-radius: 50%;
+    transition: all .4s;
+}
+
+.img-star {
+    background-color: hsl(214, 11%, 27%);
+    padding: .8rem .8rem;
+    border-radius: 50%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    
+}
+
+.btn-submit {
+    width: 100%;
+    text-decoration: none;
+    color: var(--clr-txt-header);
+    background-color: var(--clr-main-btn);
+    text-align: center;
+    padding: .7rem 1rem;
+    border-radius: 1rem;
+    letter-spacing: .1rem;
+    font-size: .7rem;
+    transition: all .4s;
+}
+
+.card-container h1 {
+    font-weight: 700;
+    color: var(--clr-txt-header);
+}
+
+.active {
+    display: none;
+}
+
+.btn-submit:hover {
+    background-color: var(--clr-txt-header);
+    color: var(--clr-main-btn);
+    cursor: pointer;
+}
+
+.rating:hover {
+    background-color: var(--clr-main-btn);
+    color: var(--clr-txt-header);
+    cursor: pointer;
+}
+
+.card-content-thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-thank{
+    max-width: 50%;
+}
+
+.selection-container {
+    width: 60%;
+    background-color: hsl(207, 10%, 23%);
+    color: var(--clr-main-btn);
+    border-radius: 1rem;
+    text-align: center;
+    padding: .4rem .2rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.thanks-message {
+    text-align: center;
+}
+
+.card-content-thanks h2 {
+    color: var(--clr-txt-header);
+}
+
+.clicked {
+    background-color: var(--clr-txt-rating);
+    color: var(--clr-txt-header);
+}
