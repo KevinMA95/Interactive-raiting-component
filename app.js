@@ -25,6 +25,9 @@ const getRating = ()=>{
 
 btnSubmit.addEventListener("click",()=>{
     getRating();
+    if(ratingNumber == undefined) {
+        return;
+    }
     ratingSelect.innerText = ratingNumber;
     feedbackContainer.classList.add("active");
     thanksContainer.classList.remove("active");
